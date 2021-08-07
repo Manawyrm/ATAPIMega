@@ -1506,6 +1506,7 @@ F 0 "J5" V 8750 3850 50  0000 R CNN
 F 1 "Drive_Power" V 8750 3700 50  0000 R CNN
 F 2 "TerminalBlock_RND:TerminalBlock_RND_205-00003_1x04_P5.00mm_Horizontal" H 8650 3650 50  0001 C CNN
 F 3 "~" H 8650 3650 50  0001 C CNN
+F 4 "C192779" V 8650 3650 50  0001 C CNN "LCSC"
 	1    8650 3650
 	0    -1   -1   0   
 $EndComp
@@ -1713,7 +1714,6 @@ $EndComp
 Wire Wire Line
 	5500 6950 5750 6950
 Connection ~ 5500 6950
-NoConn ~ 5050 7100
 $Comp
 L Device:R_Pack04 RN6
 U 1 1 618A8502
@@ -1912,10 +1912,10 @@ $EndComp
 Wire Wire Line
 	6600 4450 6050 4450
 $Comp
-L Connector:AudioJack3 J?
+L Connector:AudioJack3 J8
 U 1 1 6254C307
 P 9250 900
-F 0 "J?" H 9232 1225 50  0000 C CNN
+F 0 "J8" H 9232 1225 50  0000 C CNN
 F 1 "3.5mm" H 9232 1134 50  0000 C CNN
 F 2 "Connector_Audio:Jack_3.5mm_CUI_SJ1-3535NG_Horizontal" H 9250 900 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/1810121712_BOOMELE-Boom-Precision-Elec-C26230_C26230.pdf" H 9250 900 50  0001 C CNN
@@ -1924,10 +1924,10 @@ F 4 "C26230" H 9250 900 50  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x04 J?
+L Connector_Generic:Conn_01x04 J9
 U 1 1 625673FD
 P 10050 900
-F 0 "J?" H 10130 892 50  0000 L CNN
+F 0 "J9" H 10130 892 50  0000 L CNN
 F 1 "Audio in" H 10130 801 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 10050 900 50  0001 C CNN
 F 3 "~" H 10050 900 50  0001 C CNN
@@ -1958,4 +1958,38 @@ Wire Wire Line
 	9700 900  9700 800 
 Wire Wire Line
 	9700 800  9850 800 
+Wire Wire Line
+	5050 7100 5200 7100
+Wire Wire Line
+	5200 7100 5200 7200
+Connection ~ 5200 7200
+$Comp
+L Device:C C2
+U 1 1 626B269E
+P 5350 1000
+F 0 "C2" V 5098 1000 50  0000 C CNN
+F 1 "100nF" V 5189 1000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5388 850 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf" H 5350 1000 50  0001 C CNN
+F 4 " C1525" V 5350 1000 50  0001 C CNN "LCSC"
+	1    5350 1000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5350 850  5100 850 
+Connection ~ 5100 850 
+Wire Wire Line
+	5100 1150 5350 1150
+Connection ~ 5100 1150
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 62729D3C
+P 10650 1000
+F 0 "H3" H 10750 1046 50  0000 L CNN
+F 1 "Catboy" H 10750 955 50  0000 L CNN
+F 2 "ATAPIMega:catboy" H 10650 1000 50  0001 C CNN
+F 3 "~" H 10650 1000 50  0001 C CNN
+	1    10650 1000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
