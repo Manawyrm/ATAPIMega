@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name ToolingHole)(type KiCad)(uri ${KIPRJMOD}/lib/ToolingHole.pretty)(options "")(descr ""))
+  (lib (name ATAPIMega)(type KiCad)(uri ${KIPRJMOD}/ATAPIMega.pretty)(options "")(descr ""))
 )
