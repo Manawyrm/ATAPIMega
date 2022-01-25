@@ -1,8 +1,5 @@
 ATAPIMega
 =============================
-
-**WARNING!** This project is still in development, PCBs were ordered but not yet tested. Do not order PCBs yet!
-
 ![PCB render](https://screenshot.tbspace.de/gljmedvurbk.png)
 
 ### Overview
@@ -25,6 +22,14 @@ Price will decrease significantly with higher board count (~15$/board).
 [Schematic](gerbers/RevA/ATAPIMega/ATAPIMega.pdf)  
 [Interactive BOM](https://tbspace.de/content/downloads/atapimega-ibom-reva.html)  
 [Firmware](https://github.com/Manawyrm/ATAPIMega-Firmware)  
+
+### Errata
+Rev.A: FTDI / UART connector reset circuitry is wrong, needs bodge resistor!
+
+### Future improvements
+- mounting holes
+- labeling of audio ports (LGGR, etc.)
+- power switch
 
 ### Credits
 5V Step-Down switch-mode regulator was designed with a lot of help from [@Toble_Miner](https://github.com/TobleMiner)! Thanks!
