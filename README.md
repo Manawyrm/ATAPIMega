@@ -1,6 +1,6 @@
 ATAPIMega
 =============================
-![PCB render](https://screenshot.tbspace.de/gljmedvurbk.png)
+![PCB photo](https://screenshot.tbspace.de/kagjqdpcrew.jpg)
 
 ### Overview
 
